@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Clothing Store | Divine Drapes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Header and Navigation Bar -->
+    <header class="header">
+        <nav class="nav-bar">
+            <a href="index.html" class="brand-name">Divine Drapes</a>
+            <ul class="nav-links">
+                <li><a href="#new">New Arrivals</a></li>
+                <li><a href="#summer">Summer</a></li>
+                <li><a href="#winter">Winter</a></li>
+                <li><a href="#dresses">Dresses</a></li>
+            </ul>
+            <div class="nav-icons">
+                <!-- Cart icon -->
+                <a href="cart.html"><img src="assets/icons/shopping-cart.png" alt="Cart" class="icon"></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <video autoplay muted loop>
+            <source src="assets/vid2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Welcome to the Winter Wonderland</h1>
+            <p>Discover the magic of the season</p>
+            <div class="container">
+                <div class="searchInput">
+                    <input type="text" placeholder="Search here...">
+                    <div class="resultBox"></div>
+                    <div class="icon"><i class="fas fa-search"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Product List -->
+    
+    <!-- Product List -->
+    <div id="product-list">
+        <div class="product">
+            <img src="assets/elegant1.jpeg" alt="Elegant Dress">
+            <h3>Elegant Dress</h3>
+            <p class="price">$150</p>
+            <button onclick="'assets/'({ id: 1, name: 'Elegant Dress', price: 150, image: 'assets/elegant1.jpeg', quantity: 1 })">
+                Add to Cart
+            </button>
+        </div>
+        <div class="product">
+            <img src="assets/summer2.jpeg" alt="Summer Collection">
+            <h3>Summer Collection</h3>
+            <p class="price">$120</p>
+            <button onclick="addToCart({ id: 2, name: 'Summer Collection', price: 120, image: 'assets/summer2.jpeg', quantity: 1 })">
+                Add to Cart
+            </button>
+        </div>
+        <div class="product">
+            <img src="assets/winter1.jpeg" alt="Winter Collection">
+            <h3>Winter Collection</h3>
+            <p class="price">$200</p>
+            <button onclick="addToCart({ id: 3, name: 'Winter Collection', price: 200, image: 'assets/winter1.jpeg', quantity: 1 })">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Divine Drapes. All Rights Reserved.</p>
+            <p>Follow us on:</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
